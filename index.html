@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <span>Library</span>
+        </div>
+        <span id="totalCount" class="total-count">10 books</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="controls">
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="Search by title or author..." />
+        <select id="categoryFilter" class="category-select">
+          <option value="All">All</option>
+          <option value="Programming">Programming</option>
+          <option value="Science">Science</option>
+          <option value="Fiction">Fiction</option>
+          <option value="History">History</option>
+          <option value="Reference">Reference</option>
+        </select>
+      </div>
+
+      <div id="booksGrid" class="books-grid"></div>
+    </main>
+
+    <script src="./src/ts/app.js" defer></script>
+  </body>
+</html>
